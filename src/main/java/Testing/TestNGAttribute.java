@@ -25,5 +25,9 @@ public class TestNGAttribute {
         public void Test5 () {
             System.out.println("SignUp");
         }
+        @Test(dependsOnMethods = "Test1")
+        public void Test6 () {
+        System.out.println("Close");
+        }
 
 }
